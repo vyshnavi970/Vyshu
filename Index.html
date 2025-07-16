@@ -1,0 +1,185 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   JavaScript Powered Website
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-white shadow">
+   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+     <img alt="Company logo, a stylized blue and white abstract shape" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/a19cc351-fdb0-4ef8-a472-b9f74d5f586a.jpg" width="40"/>
+     <h1 class="text-2xl font-bold text-gray-800">
+      JS Dynamic Site
+     </h1>
+    </div>
+    <nav>
+     <ul class="flex space-x-6 text-gray-700 font-semibold">
+      <li>
+       <a class="hover:text-blue-600" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-600" href="#features">
+        Features
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-600" href="#gallery">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-600" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="flex-grow container mx-auto px-4 py-10">
+   <section class="text-center mb-20" id="home">
+    <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+     Welcome to Our JavaScript Powered Website
+    </h2>
+    <p class="text-gray-700 max-w-2xl mx-auto text-lg">
+     This website is fully dynamic and interactive, built with JavaScript and styled with Tailwind CSS.
+    </p>
+    <button class="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition" id="alertButton">
+     Click Me!
+    </button>
+   </section>
+   <section class="mb-20" id="features">
+    <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+     Features
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+      <i class="fas fa-bolt text-blue-600 text-5xl mb-4">
+      </i>
+      <h4 class="text-xl font-semibold mb-2">
+       Fast Performance
+      </h4>
+      <p class="text-gray-600">
+       Our site loads quickly and runs smoothly on all devices.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+      <i class="fas fa-mobile-alt text-blue-600 text-5xl mb-4">
+      </i>
+      <h4 class="text-xl font-semibold mb-2">
+       Responsive Design
+      </h4>
+      <p class="text-gray-600">
+       Looks great on phones, tablets, and desktops alike.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+      <i class="fas fa-code text-blue-600 text-5xl mb-4">
+      </i>
+      <h4 class="text-xl font-semibold mb-2">
+       Modern JavaScript
+      </h4>
+      <p class="text-gray-600">
+       Built with the latest JavaScript features for a seamless experience.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-20" id="gallery">
+    <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+     Gallery
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="galleryGrid">
+     <img alt="A breathtaking mountain landscape with snow-capped peaks under a clear blue sky" class="rounded-lg shadow-lg w-full h-auto object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/d4285afc-eec9-405b-21ed-70dfa343267b.jpg" width="400"/>
+     <img alt="A vibrant city skyline at night with illuminated skyscrapers and reflections on water" class="rounded-lg shadow-lg w-full h-auto object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/e8598868-87b0-4e16-de35-496162e92d42.jpg" width="400"/>
+     <img alt="A peaceful forest trail surrounded by tall green trees and dappled sunlight" class="rounded-lg shadow-lg w-full h-auto object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/c0374fbe-11d5-4ed2-8478-ea9f9f381391.jpg" width="400"/>
+     <img alt="A stunning beach sunset with orange and pink hues reflecting on calm ocean waves" class="rounded-lg shadow-lg w-full h-auto object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/9bb34099-1054-4d3c-a51b-6746adffca59.jpg" width="400"/>
+     <img alt="Golden desert dunes under a bright blue sky with soft shadows and ripples in the sand" class="rounded-lg shadow-lg w-full h-auto object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/80b0ee68-2d4f-4875-b44e-a5312812dba4.jpg" width="400"/>
+     <img alt="A quaint snowy village with cozy houses and smoke rising from chimneys in winter" class="rounded-lg shadow-lg w-full h-auto object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/75ef5c26-9fa8-44bc-9fc7-9875a4ddab70.jpg" width="400"/>
+     <img alt="A colorful meadow filled with wildflowers under a sunny sky with fluffy clouds" class="rounded-lg shadow-lg w-full h-auto object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/80c6c255-1754-4e8d-8c53-db077afb92af.jpg" width="400"/>
+     <img alt="Dramatic ocean cliffs with waves crashing against rocks and seagulls flying overhead" class="rounded-lg shadow-lg w-full h-auto object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/3491f41b-e2a1-4487-0e28-e0386318623b.jpg" width="400"/>
+    </div>
+   </section>
+   <section class="mb-20 max-w-lg mx-auto bg-white p-8 rounded-lg shadow" id="contact">
+    <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+     Contact Us
+    </h3>
+    <form class="space-y-6" id="contactForm">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" name="message" placeholder="Write your message here..." required="" rows="4"></textarea>
+     </div>
+     <button class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition" type="submit">
+      Send Message
+     </button>
+    </form>
+    <p class="mt-4 text-center text-green-600 font-semibold hidden" id="formMessage">
+    </p>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 py-6">
+   <div class="container mx-auto px-4 text-center text-gray-600">
+    © 2024 JS Dynamic Site. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   // Alert button click
+    document.getElementById('alertButton').addEventListener('click', () => {
+      alert('Hello! You clicked the button.');
+    });
+
+    // Contact form submission
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Simple form validation (already required in inputs)
+      const name = contactForm.name.value.trim();
+      const email = contactForm.email.value.trim();
+      const message = contactForm.message.value.trim();
+
+      if (name && email && message) {
+        // Simulate sending message
+        formMessage.textContent = 'Thank you for your message, ' + name + '! We will get back to you soon.';
+        formMessage.classList.remove('hidden');
+        contactForm.reset();
+      } else {
+        formMessage.textContent = 'Please fill in all fields.';
+        formMessage.classList.remove('hidden');
+        formMessage.classList.add('text-red-600');
+      }
+    });
+  </script>
+ </body>
+</html>
+
